@@ -26,8 +26,8 @@ class Solution {
         ArrayList<Integer> roots = new ArrayList<Integer>(); 
         int determinant = (b*b)-(4*a*c); 	// calculating determinant
         if (determinant>=0){ 			  	// if determinant is positive
-            Double d1 = Math.floor((-b+(Math.sqrt(sqrt)))/(2*a));
-            Double d2 = Math.floor((-b-(Math.sqrt(sqrt)))/(2*a));
+            Double d1 = Math.floor((-b+(Math.sqrt(determinant)))/(2*a));
+            Double d2 = Math.floor((-b-(Math.sqrt(determinant)))/(2*a));
             if(d1 > d2){                    // for roots to assign in decreasing order
                 roots.add(d1.intValue());
                 roots.add(d2.intValue());
